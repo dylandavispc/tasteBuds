@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "Dilldill1",
+    "database": "tasteBudsDB",
     "host": "localhost",
     "dialect": "mysql"
   },
