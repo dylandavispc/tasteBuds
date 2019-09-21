@@ -5,7 +5,7 @@ const db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the bud
+  // GET route for getting all of the buds
   app.get("/api/buds", function(req, res) {
     const query = {};
     if (req.query.buds_id) {
