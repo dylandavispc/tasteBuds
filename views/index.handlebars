@@ -1,21 +1,25 @@
-<div id="home">
+
+<div class="home" style='background-image: url("https://images.unsplash.com/photo-1567517024911-289435152490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")'>
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
+        <div class="jumbotron">
+        <h1>TASTE BUDS</h1>
+        <h2>A Dining Roulette App for Friends!</h2>
+        <hr class="my-4">
         <form class="clearfix mb-4" action="POST">
+          <h3> Create an account  </h3>
           <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <label for="example-text">User name</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="john@gmail.com">
           </div>
           <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+            <label for="example-description">Password</label>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="12345"></textarea>
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
-        <h3>Examples:</h3>
+        {{!-- <h3>Examples:</h3>
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
@@ -23,11 +27,20 @@
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li>
           {{/each}}
-        </ul>
+        </ul> --}}
       </div>
     </div>
   </div>
 </div>
+<footer class="footer py-3">
+	<div class="footer-container text-center">
+	  <span class="footer-text d-inline-block">© Created by
+	  <a href="https://github.com/jenross" target="_blank">Jen Ross</a>,
+	  <a href="https://github.com/dylandavispc" target="_blank">Dylan Davis</a>,
+	  <a href="https://github.com/dsanchez910" target="_blank">Daniel Sanchez</a>,
+	  <a href="https://github.com/Jamila1975" target="_blank">Jamila Djumadullaeva</a>, 2019</span>
+	</div>
+</foote
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
