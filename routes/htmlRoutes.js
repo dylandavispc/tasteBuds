@@ -3,11 +3,10 @@ const db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.User.findAll({}).then(function(dbUser) {
-      res.render("user", {
-        msg: "Tastebuds food and friends finder",
-        examples: dbUser
-      });
+    db.User.findAll({
+      include: [db.Bud]
+    }).then(function(dbUser) {
+      res.json(data)
     });
   });
 
@@ -24,15 +23,7 @@ module.exports = function(app) {
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property
-    db.User.create({
-      id: req.body.id,
-      name: req.body.name,
-      email: req.body.email,
-      location: req.body.location,
-      password: req.body.password
-
-
-    }).then(function(dbUser) {
+    db.User.create(req.body).then(function(dbUser) {
       // We have access to the new user as an argument inside of the callback function
       res.json(dbUser);
     });
@@ -52,8 +43,8 @@ module.exports = function(app) {
       where: {
         id: req.body.id
       }
-    }).then(function(dbTodo) {
-      res.json(dbTodo);
+    }).then(function(dbUser) {
+      res.json(dbUser);
     });
   });
 
