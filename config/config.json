@@ -1,14 +1,16 @@
 {
   "development": {
     "username": "root",
+
     "password": "Dilldill1",
     "database": "tasteBudsDB",
+
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "fl002211",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
