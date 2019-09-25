@@ -26,21 +26,20 @@
   </div>
 </nav>
 
-    <h1>TASTE BUDS</h1>
+    <h1>Register / Sign in</h1>
 
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control form-input" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
-    <h2>Log in</h2>
             <div class="form-group">
                 <label for="friendSelect1">Friend select</label>
-                <select class="form-control form-input" id="friendSelect1">
+                <select class="form-control" id="friendSelect1">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -50,7 +49,7 @@
             </div>
             <div class="form-group">
                 <label for="friendSelect2">Friend multiple select</label>
-                <select multiple="" class="form-control form-input" id="friendSelect2">
+                <select multiple="" class="form-control" id="friendSelect2">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -60,30 +59,23 @@
             </div>
             <div class="form-group">
                 <label for="exampleTextarea">Example textarea</label>
-                <textarea class="form-control form-input " id="exampleTextarea" rows="3"></textarea>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
             </div>
 
             <fieldset class="form-group">
                 <legend>Checkboxes</legend>
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input class="form-check-input " type="checkbox" value="" checked="">
-                            Bar
-        </label>
-      </div>
-      <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input " type="checkbox" value="" checked="">
-                            Cafe
-        </label>
-      </div>
-      <div class="form-check">
-                    <label class="form-check-label">
                         <input class="form-check-input" type="checkbox" value="" checked="">
-                            Restorant
+                            Option one is this and that—be sure to include why it's great
         </label>
       </div>
-                    
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" disabled="">
+                                Option two is disabled
+        </label>
+      </div>
     </fieldset>
                     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
