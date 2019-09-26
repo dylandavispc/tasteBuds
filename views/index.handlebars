@@ -7,14 +7,14 @@
         <h1>TASTE BUDS</h1>
         <h2>A Dining Roulette App for Friends!</h2>
         <hr class="my-4">
-        <form class="clearfix mb-4" action="POST">
+        {{!-- <form class="clearfix mb-4" action="POST"> --}}
           <h3> Create an account  </h3>
           <div class="row mt-5">
             <div class="col-md-6 m-auto">
             <div class="card card-body">
       <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
       
-      <form action="/users/login" method="POST">
+      <form id="login">
         <div class="form-group">
           <label for="email">Email</label>
           <input
@@ -35,7 +35,7 @@
             placeholder="Enter Password"
           />
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <button type="submit" href="/home" class="btn btn-primary btn-block">Login</button>
       </form>
       <p class="lead mt-4">
         No Account? <a href="/register">Register</a>

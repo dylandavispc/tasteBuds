@@ -6,14 +6,12 @@ module.exports = function(app) {
     db.User.findAll({
       include: [db.Bud]
     }).then(function(data) {
-      console.log(data);
       res.json(data);
     });
   });
 
   // Get user according to id
   app.get("/api/user/:id", function(req, res) {
-    console.log(req.params.id)
     db.User.findOne({
       where: {
         id: req.params.id
@@ -27,7 +25,6 @@ module.exports = function(app) {
   // Create a new User
   app.post("/api/user", function(req, res) {
     db.User.create(req.body).then(function(userData) {
-      console.log("userData: " + userData);
       res.json(userData);
     });
   });
